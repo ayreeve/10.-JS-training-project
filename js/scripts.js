@@ -48,3 +48,11 @@ if (allNames.indexOf(newName) === -1) {
 }
 
 console.log(allNames);
+
+/* strings */
+var text = 'Papugi koszą trawę, unosząc się nad ziemią na czerwonych dywanach',
+    animal = 'Zielone słonie',
+    animalUpper = animal.toUpperCase(),
+    subjectChange = text.replace('Papugi', animalUpper);
+
+console.log(subjectChange.slice(0, text.length / 3));
