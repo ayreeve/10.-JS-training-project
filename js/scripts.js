@@ -19,6 +19,12 @@ var x = 1,
     y = 2,
     value = (x * x) + (2 * x * y) - (y * y),
     value = value >= 0 ? console.log('Wynik działania (x * x) + (2 * x * y) - (y * y) (równy ' + value + ') jest liczbą dodatnią.') : console.log('Wynik działania (x * x) + (2 * x * y) - (y * y) (równy ' + value + ') jest liczbą ujemną.');
+    value = (x * x) + (2 * x * y) - (y * y);
+if (value >= 0) {
+    console.log('Wynik działania (x * x) + (2 * x * y) - (y * y) (równy ' + value + ') jest liczbą dodatnią.');
+} else {
+    console.log('Wynik działania (x * x) + (2 * x * y) - (y * y) (równy ' + value + ') jest liczbą ujemną.');
+}
 
 /* triangle area conditional statement */
 function getTriangleArea(a, h) {
