@@ -6,7 +6,7 @@ alert('Witaj, ' + name);
 
 console.log('Witaj, ' + name);
 
-/* traingle area */
+/* triangle area */
 var a = prompt('Podaj długość podstawy trójkąta (w cm)'),
     h = prompt('Podaj wysokość trójkąta (w cm)'),
     triangleArea = a * h / 2;
@@ -17,8 +17,6 @@ console.log('Pole trójkąta o podstawie a = ' + a + ' i wysokości h = ' + h + 
 /* operation */
 var x = 1,
     y = 2,
-    value = (x * x) + (2 * x * y) - (y * y),
-    value = value >= 0 ? console.log('Wynik działania (x * x) + (2 * x * y) - (y * y) (równy ' + value + ') jest liczbą dodatnią.') : console.log('Wynik działania (x * x) + (2 * x * y) - (y * y) (równy ' + value + ') jest liczbą ujemną.');
     value = (x * x) + (2 * x * y) - (y * y);
 if (value >= 0) {
     console.log('Wynik działania (x * x) + (2 * x * y) - (y * y) (równy ' + value + ') jest liczbą dodatnią.');
@@ -39,7 +37,7 @@ console.log(getTriangleArea(10, 6));
 
 var triangle1Area = console.log(getTriangleArea(5, 2)),
     triangle2Area = console.log(getTriangleArea(99, 789)),
-    traingle3Area = console.log(getTriangleArea(12, 71));
+    triangle3Area = console.log(getTriangleArea(12, 71));
 
 /* array */
 var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'],
@@ -61,4 +59,18 @@ var text = 'Papugi koszą trawę, unosząc się nad ziemią na czerwonych dywana
     animalUpper = animal.toUpperCase(),
     subjectChange = text.replace('Papugi', animalUpper);
 
-console.log(subjectChange.slice(0, text.length / 3));
+console.log(subjectChange.slice(0, subjectChange.length / 2));
+
+
+/* tree */
+function drawTree(n) {
+    for (var i = 1; i <= n; i++) {
+        var star = '*';
+        for (var j = 1; j < i; j++) {
+            star += '*';
+        }
+        console.log(star);
+    }
+}
+
+drawTree(5);
