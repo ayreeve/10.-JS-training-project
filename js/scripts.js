@@ -65,11 +65,15 @@ console.log(subjectChange.slice(0, subjectChange.length / 2));
 /* tree */
 function drawTree(n) {
     for (var i = 1; i <= n; i++) {
-        var star = '*';
-        for (var j = 1; j < i; j++) {
+        var star = '';
+        var space = '';
+        for (var j = 1; j < 2 * i; j++) {
             star += '*';
         }
-        console.log(star);
+        for (var k = 0.5 * i; k < n; k++) {
+            space += ' ';
+        }
+        console.log(space + star);
     }
 }
 
