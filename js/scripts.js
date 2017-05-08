@@ -70,7 +70,7 @@ function drawTree(n) {
         for (var j = 1; j < 2 * i; j++) {
             star += '*';
         }
-        for (var k = 0.5 * i; k < n; k++) {
+        for (var k = i; k < n; k++) {
             space += ' ';
         }
         console.log(space + star);
