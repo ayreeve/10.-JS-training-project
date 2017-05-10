@@ -1,12 +1,12 @@
-/*jslint devel: true*/
+// jslint devel: true
 
-/* welcome */
+// welcome 
 var name = prompt('Jak masz na imię?');
 alert('Witaj, ' + name);
 
 console.log('Witaj, ' + name);
 
-/* triangle area */
+// triangle area
 var a = prompt('Podaj długość podstawy trójkąta (w cm)'),
     h = prompt('Podaj wysokość trójkąta (w cm)'),
     triangleArea = a * h / 2;
@@ -14,7 +14,7 @@ alert('Pole trójkąta wynosi ' + triangleArea + ' cm.');
 
 console.log('Pole trójkąta o podstawie a = ' + a + ' i wysokości h = ' + h + ' wynosi ' + triangleArea);
 
-/* operation */
+// operation
 var x = 1,
     y = 2,
     value = (x * x) + (2 * x * y) - (y * y);
@@ -24,7 +24,7 @@ if (value >= 0) {
     console.log('Wynik działania (x * x) + (2 * x * y) - (y * y) (równy ' + value + ') jest liczbą ujemną.');
 }
 
-/* triangle area conditional statement */
+// triangle area conditional statement
 function getTriangleArea(a, h) {
     if (a > 0 && h > 0) {
         return a * h / 2;
@@ -39,7 +39,7 @@ var triangle1Area = console.log(getTriangleArea(5, 2)),
     triangle2Area = console.log(getTriangleArea(99, 789)),
     triangle3Area = console.log(getTriangleArea(12, 71));
 
-/* array */
+// array
 var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'],
     maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'],
     allNames = femaleNames.concat(maleNames);
@@ -53,7 +53,7 @@ if (allNames.indexOf(newName) === -1) {
 
 console.log(allNames);
 
-/* strings */
+// strings
 var text = 'Papugi koszą trawę, unosząc się nad ziemią na czerwonych dywanach',
     animal = 'Zielone słonie',
     animalUpper = animal.toUpperCase(),
@@ -62,7 +62,7 @@ var text = 'Papugi koszą trawę, unosząc się nad ziemią na czerwonych dywana
 console.log(subjectChange.slice(0, subjectChange.length / 2));
 
 
-/* tree */
+// tree
 function drawTree(n) {
     for (var i = 1; i <= n; i++) {
         var star = '';
