@@ -12,10 +12,13 @@
     },
     "devDependencies": {
         "grunt": "^1.0.1",
-        "grunt-contrib-jshint": "^1.1.0"
+        "grunt-contrib-jshint": "^1.1.0",
+        "standard": "^10.0.2",
+        "standard": "*"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "standard && node my-tests.js"
     },
     "repository": {
         "type": "git",
@@ -26,9 +29,5 @@
     "bugs": {
         "url": "https://github.com/ayreeve/JS-training-project/issues"
     },
-    "homepage": "https://github.com/ayreeve/JS-training-project#readme",
-    "devDependencies": {
-        "grunt": "^1.0.1",
-        "grunt-contrib-jshint": "^1.1.0"
-    }
+    "homepage": "https://github.com/ayreeve/JS-training-project#readme"
 }
